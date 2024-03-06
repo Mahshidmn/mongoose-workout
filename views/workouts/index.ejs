@@ -1,0 +1,70 @@
+<%- include('../partials/header') %>
+
+<section>
+    <h2>Legs and Glute</h2>
+    <table id="legs and glute">
+       
+        <tbody>
+            <% workouts.forEach(function(w) { %>
+                <% if (w.bodyPart === 'Legs and Glute') { %>
+                    <tr>
+                        <td><%= w.title %></td>
+                        <td><a href="/workouts/<%= w._id %>">DETAILS</a></td>
+                    </tr>
+                <% } %>
+            <% }); %>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Back and Biceps</h2>
+    <table id="Back and Biceps">
+       
+        <tbody>
+            <% workouts.forEach(function(w) { %>
+                <% if (w.bodyPart === 'Back and Biceps') { %>
+                    <tr>
+                        <td><%= w.title %></td>
+                        <td><a href="/workouts/<%= w._id %>">DETAILS</a></td>
+                    </tr>
+                <% } %>
+            <% }); %>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Shoulder and Triceps</h2>
+    <table id="Shoulder and Triceps">
+        
+            <% workouts.forEach(function(w) { %>
+                <% if (w.bodyPart === 'Shoulder and Triceps') { %>
+                    <tr>
+                        <td><%= w.title %></td>
+                        <td><a href="/workouts/<%= w._id %>">DETAILS</a></td>
+                    </tr>
+                <% } %>
+            <% }); %>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Full Body</h2>
+    <table id="Full Body">
+        
+        <tbody>
+            <% workouts.forEach(function(w) { %>
+                <% if (w.bodyPart === 'Full Body') { %>
+                    <tr>
+                        <td><%= w.title %></td>
+                        <td><a href="/workouts/<%= w._id %>">DETAILS</a></td>
+                    </tr>
+                <% } %>
+            <% }); %>
+        </tbody>
+    </table>
+</section>
+
+<%- include('../partials/footer') %>

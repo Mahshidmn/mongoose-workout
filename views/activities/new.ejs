@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<h2>Add Activity</h2>
+<form id="new-form" action="/activities" method="POST">
+    
+  <label>Title:</label>
+  <input type="text" name="title">
+  <label>Date:</label>
+  <input type="datetime-local" name="date">
+  <label>Duration:</label>
+  <input type="text" name="duration">
+  <label>Sets:</label>
+  <input type="text" name="sets">
+  <label>Best KG:</label>
+  <input type="text" name="bestKg">
+  <lable>Workouts:</lable>
+    <ul>
+      
+    </ul>
+
+ 
+  <input type="submit" value="Add Activity">
+</form>
+
+
+<%- include('../partials/footer') %>

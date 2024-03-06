@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+<h2>Workout Templates</h2>
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Title</th>
+      <th>Difficulty</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <% workoutSessions.forEach(function(ws) { %>
+      <tr>
+        <td class="review-user"><img alt="avatar" src="<%= ws.userAvatar %>" referrerpolicy="no-referrer"><%= ws.userName %>
+        <td><%= ws.title %></td>
+        <td><%= ws.difficulty %></td>
+        <td><a href="/workoutsessions/<%= ws._id %>">DETAILS</a></td>
+      </tr>
+   
+    <% }); %>
+  </tbody>
+</table>
+
+
+<%- include('../partials/footer') %>

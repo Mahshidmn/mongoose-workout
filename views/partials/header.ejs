@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mongoose Workouts</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <nav id="nav-bar">
+    <a href="/workouts">ALL WORKOUTS</a>
+ <% if (user) { %>
+    <a href="/workouts/new">ADD NEW WORKOUT</a>
+    <a href="/activities">ALL ACTIVITIES</a>
+    <a href="/activities/new">ADD NEW ACTIVITY</a>
+    <a href="/workoutsessions">ALL WORKOUT SESSIONS</a>
+    <a href="/workoutsessions/new">ADD NEW WORKOUT SESSION</a>
+    <a href="/logout">LOG OUT</a>
+  <% } else { %>
+    <a href="/auth/google" class="login">LOG IN</a>
+  <% } %>  
+      
+    
+    <!-- <a href="/workoutsessions/show">WORKOUT HISTORY</a>     -->
+  </nav>
+  <main>
+   
+  

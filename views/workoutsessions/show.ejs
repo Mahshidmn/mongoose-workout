@@ -1,0 +1,52 @@
+<%- include('../partials/header') %>
+
+
+
+
+<section id="show-page">
+  <div><strong>Title: </strong></div>
+  <div>
+    <%= workoutSession.title %>
+  </div>
+  <div><strong>Difficulty: </strong></div>
+  <div>
+    <%= workoutSession.difficulty %>
+  </div>
+  <div><strong>Location Type: </strong></div>
+  <div>
+    <%= workoutSession.locationType %>
+  </div>
+  <div><strong>Completed:</strong> </div>
+  <div>
+    <%= workoutSession.completed ? 'Yes' : 'No' %>
+  </div>
+  <div><strong>Activities:</strong></div>
+  <ul>
+    <%- workoutSession.activities.map(a => {
+      let workoutTitle = a.workouts.map(w => w.title).join(', ');
+      return `<li>Activity: ${a.title} Workouts: ${workoutTitle}, Sets: ${a.sets}, Best Kg: ${a.bestKg},
+                  Duration: ${a.duration}, Date: ${a.date.toDateString()}</li>`;
+  }).join('') %>
+  </ul>
+</section>
+<form id="add" action="/workoutsessions/<%= workoutSession._id %>/activities" method="POST">
+<select name="activityId">
+  <%- activities.map(a =>
+    `<option value="${a._id}">${a.title} </option>`) %>
+</select>
+<button type="submit">Add Activity</button>
+</form>
+<a href="/workoutsessions/new">Workout Session completed</a>
+</section>
+
+
+
+
+
+
+
+
+
+ 
+
+<%- include('../partials/footer') %>

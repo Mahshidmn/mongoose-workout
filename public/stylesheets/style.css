@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.add-workout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.review-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-user img {
+  border-radius: 50%;
+  height: 40px;
+}

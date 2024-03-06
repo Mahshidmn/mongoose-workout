@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<h2>Activities</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <% activities.forEach(function(a) { %>
+      <tr>
+        <td><%= a.title %></td>
+        <td><%= a.date %></td>
+        <td><a href="/activities/<%= a._id %>">DETAILS</a></td>
+      </tr>
+   
+    <% }); %>
+  </tbody>
+</table>
+
+
+
+<%- include('../partials/footer') %>

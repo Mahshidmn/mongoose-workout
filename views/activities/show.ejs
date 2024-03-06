@@ -1,0 +1,44 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+  <div><strong>Title:</strong> </div>
+    <div>
+      <%= activity.title %>
+    </div>
+    <div><strong>Date:</strong> </div>
+    <div>
+      <%= activity.date.toDateString() %>
+    </div>
+
+    <div><strong>Duration:</strong> </div>
+    <div>
+      <%= activity.duration%>
+    </div>
+
+    <div><strong>Sets:</strong> </div>
+    <div>
+      <%= activity.sets %>
+    </div>
+
+    <div><strong>Best KG:</strong> </div>
+    <div>
+      <%= activity.bestKg %>
+    </div>
+    <div><strong>Workouts:</strong></div>
+    <ul>
+      <%- activity.workouts.map(w => `<li>${w.title}</li>`).join('') %>
+    </ul>
+   
+  </section>
+<form id="add" action="/activities/<%= activity._id %>/workouts" method="POST">
+  <select name="workoutId">
+    <%- workouts.map(w =>
+      `<option value="${w._id}">${w.title}</option>`) %>
+  </select>
+  <button type="submit">Add Workout</button>
+</form>
+
+
+
+
+<%- include('../partials/footer') %>

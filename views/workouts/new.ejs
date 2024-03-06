@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+
+<h2>Add Workout</h2>
+<form id="new-form" action="/workouts" method="POST">
+  
+  <label>Title:</label>
+    <input type="text" name="title">
+
+  <label>Description:</label>
+  <input type="text" name="description">
+
+  <label>Body Part:</label>
+  <select name="bodyPart">
+    <option value="Legs and Glute">Legs and Glute</option>
+    <option value="Back and Biceps">Back and Biceps</option>
+    <option value="Shoulder and Triceps">Shoulder and Triceps</option>
+    <option value="Full Body">Full Body</option>
+  </select>
+  
+  <input type="submit" value="Add Workout">
+</form>
+
+
+<%- include('../partials/footer') %>
