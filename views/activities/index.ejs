@@ -1,11 +1,12 @@
 <%- include('../partials/header') %>
 
-<h2>Activities</h2>
+<h2 class="fs-4 fw-bold text-bg-dark p-2 text-center">Activities</h2>
 <table>
   <thead>
     <tr>
       <th>Title</th>
       <th>Date</th>
+      <th>Info</th>
     </tr>
   </thead>
   <tbody>
@@ -14,7 +15,7 @@
       <tr>
         <td><%= a.title %></td>
         <td><%= a.date %></td>
-        <td><a href="/activities/<%= a._id %>">DETAILS</a></td>
+        <td><a href="/activities/<%= a._id %>">Details</a></td>
       </tr>
    
     <% }); %>

@@ -1,17 +1,17 @@
 <%- include('../partials/header') %>
 
-<h2>Add Workout</h2>
-<div class="row mb-3">
-    <form  action="/workouts" method="POST">
+<h2 class="fs-4 fw-bold text-bg-dark p-2 text-center">Add Workout</h2>
+<div class="add-new-workout">
+    <form  id="add-form" action="/workouts" method="POST">
   
-        <label>Title:</label>
+        <label scope="col" class="text-end">Title:</label>
           <input type="text" name="title">
       
-        <label>Description:</label>
+        <label scope="col" class="text-end">Description:</label>
         <input type="text" name="description">
       
       
-        <label>Focus:</label>
+        <label scope="col" class="text-end">Focus:</label>
         <select name="focus">
           <option value="Legs and Glute">Legs and Glute</option>
           <option value="Back and Biceps">Back and Biceps</option>
@@ -20,7 +20,7 @@
           <option value="Cardio">Cardio</option>
         </select>
         
-        <input type="submit" value="Add Workout">
+        <input type="submit" class="btn btn-success btn-shadow"  value="Add Workout">
       </form>
 
 </div>

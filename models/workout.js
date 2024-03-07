@@ -7,7 +7,7 @@ const workoutSchema = new Schema({
     description: { type: String},
     focus: {
         type: String,
-        enum: ['Legs and Glute', 'Back and Biceps', 'Shoulder and Triceps', 'Full Body']
+        enum: ['Legs and Glute', 'Back and Biceps', 'Shoulder and Triceps', 'Full Body', 'Cardio']
       },
     
 }, {
