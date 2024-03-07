@@ -1,20 +1,29 @@
 <%- include('../partials/header') %>
 
-<section id="show-page">
-    <div><strong>Title:</strong> </div>
-    <div>
-      <%= workout.title %>
-    </div>
-    <div><strong>Focus:</strong> </div>
-    <div>
-      <%= workout.focus%>
-    </div>
-
-    <div><strong>Description:</strong> </div>
-    <div>
-    <div>
-      <%= workout.description %>
-    </div>
-
+<section id="show-page" class="container mt-4">
+  <table class="table">
+    <!-- thead-light/dark not working -->
+    <thead class="thead-light"> 
+      <tr>
+        <th scope="col">Attribute</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Title:</strong></td>
+        <td><%= workout.title %></td>
+      </tr>
+      <tr>
+        <td><strong>Focus:</strong></td>
+        <td><%= workout.focus %></td>
+      </tr>
+      <tr>
+        <td><strong>Description:</strong></td>
+        <td><%= workout.description %></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
 <%- include('../partials/footer') %>

@@ -1,26 +1,26 @@
 <%- include('../partials/header') %>
 
-<h2>Add Workout Session</h2>
-<form id="new-form" action="/workoutsessions" method="POST">
+<h2 class="fs-4 fw-bold text-bg-dark p-2 text-center">Add Workout Session</h2>
+<form id="add-form" action="/workoutsessions" method="POST">
     
-    <label>Title:</label>
+    <label class="text-end">Title:</label>
   <input type="text" name="title" >
 
-  <label>Difficulty:</label>
+  <label class="text-end">Difficulty:</label>
   <select name="difficulty">
     <option value="Beginner">Beginner</option>
     <option value="Intermediate">Intermediate</option>
     <option value="Advance">Advance</option>
   </select>
-  <label>Location Type:</label>
+  <label class="text-end">Location Type:</label>
   <select name="locationType">
     <option value="Gym">Gym</option>
     <option value="home">Home</option>
   </select>
-  <label>Completed:</label>
+  <label class="text-end">Completed:</label>
   <input type="checkbox" name="completed" >
   
-  <input type="submit" value="Add Session">
+  <input type="submit" class="btn btn-success btn-shadow" value="Add Session">
 </form>
 
 

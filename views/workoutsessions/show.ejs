@@ -1,52 +1,50 @@
 <%- include('../partials/header') %>
 
+<section id="show-page" class="container mt-4">
+  <h2 class="text-center mb-4">Workout Session Details</h2>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <th>Title:</th>
+        <td><%= workoutSession.title %></td>
+      </tr>
+      <tr>
+        <th>Difficulty:</th>
+        <td><%= workoutSession.difficulty %></td>
+      </tr>
+      <tr>
+        <th>Location Type:</th>
+        <td><%= workoutSession.locationType %></td>
+      </tr>
+      <tr>
+        <th>Completed:</th>
+        <td><%= workoutSession.completed ? 'Yes' : 'No' %></td>
+      </tr>
+      <tr>
+        <th>Activities:</th>
+        <td>
+          <ul>
+            <%- workoutSession.activities.map(a => {
+              let workoutTitle = a.workouts.map(w => w.title).join(', ');
+              return `<li>Activity: ${a.title}, Workouts: ${workoutTitle}, Sets: ${a.sets}, Best Kg: ${a.bestKg}, Duration: ${a.duration}, Date: ${a.date.toDateString()}</li>`;
+            }).join('') %>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
+  <form id="add" action="/workoutsessions/<%= workoutSession._id %>/activities" method="POST" class="my-4">
+    <div class="mb-3">
+      <label for="activitySelect" class="form-label"><strong>Add Activity</strong></label>
+      <select name="activityId" id="activitySelect" class="form-select">
+        <%- activities.map(a => `<option value="${a._id}">${a.title}</option>`) %>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-shadow btn-sm">Add Activity</button>
+  </form>
 
-
-<section id="show-page">
-  <div><strong>Title: </strong></div>
-  <div>
-    <%= workoutSession.title %>
-  </div>
-  <div><strong>Difficulty: </strong></div>
-  <div>
-    <%= workoutSession.difficulty %>
-  </div>
-  <div><strong>Location Type: </strong></div>
-  <div>
-    <%= workoutSession.locationType %>
-  </div>
-  <div><strong>Completed:</strong> </div>
-  <div>
-    <%= workoutSession.completed ? 'Yes' : 'No' %>
-  </div>
-  <div><strong>Activities:</strong></div>
-  <ul>
-    <%- workoutSession.activities.map(a => {
-      let workoutTitle = a.workouts.map(w => w.title).join(', ');
-      return `<li>Activity: ${a.title} Workouts: ${workoutTitle}, Sets: ${a.sets}, Best Kg: ${a.bestKg},
-                  Duration: ${a.duration}, Date: ${a.date.toDateString()}</li>`;
-  }).join('') %>
-  </ul>
+  <a href="/workoutsessions/new" class="btn btn-success btn-shadow" id="session-completion-button"> Workout Session Completed</a>
 </section>
-<form id="add" action="/workoutsessions/<%= workoutSession._id %>/activities" method="POST">
-<select name="activityId">
-  <%- activities.map(a =>
-    `<option value="${a._id}">${a.title} </option>`) %>
-</select>
-<button type="submit">Add Activity</button>
-</form>
-<a href="/workoutsessions/new">Workout Session completed</a>
-</section>
-
-
-
-
-
-
-
-
-
- 
 
 <%- include('../partials/footer') %>

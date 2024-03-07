@@ -1,26 +1,30 @@
 <%- include('../partials/header') %>
 
 <h2 class="fs-4 fw-bold text-bg-dark p-2 text-center">Activities</h2>
-<table>
+
+<table class="table table-striped" >
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Date</th>
-      <th>Info</th>
+     
+      <th scope="col">Title</th>
+      <th scope="col">Date</th>
+      <th scope="col">Info</th>
     </tr>
   </thead>
   <tbody>
    
     <% activities.forEach(function(a) { %>
       <tr>
-        <td><%= a.title %></td>
+        
+        <td><strong><%= a.title %></strong></td>
         <td><%= a.date %></td>
-        <td><a href="/activities/<%= a._id %>">Details</a></td>
+        <td ><a href="/activities/<%= a._id %>" class="btn btn-outline-primary btn-sm">Details</a></td>
       </tr>
    
     <% }); %>
   </tbody>
 </table>
+
 
 
 

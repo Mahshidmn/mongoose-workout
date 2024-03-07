@@ -20,11 +20,11 @@ a {
 }
 
 .fit-image {
-  max-height: 70vh; 
+  /* max-height: 50vh;  */
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  margin: 0;
+  margin-top: -20vmin;
 }
 
 
@@ -49,11 +49,26 @@ h2 {
   margin-left: 290px;
   padding:0;
 }
+
+.add-new-form {
+  margin: 150px;
+}
+
 .btn-shadow {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.add-new-workout {
-  margin: 150px;
+
+
+.add-to-activity-form {
+  display:flex;
+  justify-content: center;
+  padding: 1vmin;
+}
+
+#session-completion-button {
+  display: flex;
+  justify-content: center;
+
 }

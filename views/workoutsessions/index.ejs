@@ -1,22 +1,26 @@
 <%- include('../partials/header') %>
 
-<h2>Workout Templates</h2>
-<table>
+<h2 class="fs-4 fw-bold text-bg-dark p-2 text-center">Workout Sessions</h2>
+<table class="table table-striped" >
   <thead>
     <tr>
       <th>User</th>
       <th>Title</th>
       <th>Difficulty</th>
+      <th>Completed</th>
+      <th>Info</th>
+      
     </tr>
   </thead>
   <tbody>
    
     <% workoutSessions.forEach(function(ws) { %>
       <tr>
-        <td class="review-user"><img alt="avatar" src="<%= ws.userAvatar %>" referrerpolicy="no-referrer"><%= ws.userName %>
+        <td class="#"><img alt="avatar" src="<%= ws.userAvatar %>" referrerpolicy="no-referrer"><%= ws.userName %>
         <td><%= ws.title %></td>
         <td><%= ws.difficulty %></td>
-        <td><a href="/workoutsessions/<%= ws._id %>">DETAILS</a></td>
+        <td><%= ws.completed %></td>
+        <td><a href="/workoutsessions/<%= ws._id %>" class="btn btn-outline-primary btn-sm">DETAILS</a></td>
       </tr>
    
     <% }); %>

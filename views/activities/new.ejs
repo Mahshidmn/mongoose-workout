@@ -1,25 +1,24 @@
 <%- include('../partials/header') %>
 
-<h2>Add Activity</h2>
-<form id="new-form" action="/activities" method="POST">
-    
-  <label>Title:</label>
-  <input type="text" name="title">
-  <label>Date:</label>
-  <input type="datetime-local" name="date">
-  <label>Duration:</label>
-  <input type="text" name="duration">
-  <label>Sets:</label>
-  <input type="text" name="sets">
-  <label>Best KG:</label>
-  <input type="text" name="bestKg">
-  <lable>Workouts:</lable>
-    <ul>
-      
-    </ul>
 
+
+<h2 class="fs-4 fw-bold text-bg-dark p-2 text-center">Add Activity</h2>
+<form id="add-form" action="/activities" method="POST">
+    
+  <label class="text-end">Title:</label>
+  <input type="text" name="title">
+  <label class="text-end">Date:</label>
+  <input type="datetime-local" name="date">
+  <label class="text-end">Duration:</label>
+  <input type="text" name="duration">
+  <label class="text-end">Sets:</label>
+  <input type="text" name="sets">
+  <label class="text-end">Best KG:</label>
+  <input type="text" name="bestKg">
+  
+  <input type="submit" class="btn btn-primary btn-shadow btn-sm"  value="Add Activity">
  
-  <input type="submit" value="Add Activity">
+  
 </form>
 
 
