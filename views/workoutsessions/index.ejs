@@ -16,10 +16,11 @@
    
     <% workoutSessions.forEach(function(ws) { %>
       <tr>
-        <td class="#"><img alt="avatar" src="<%= ws.userAvatar %>" referrerpolicy="no-referrer"><%= ws.userName %>
+        <!-- TODo: Access userName and userAvatar from ws.activity -->
+        <td class="#"><img alt="avatar" referrerpolicy="no-referrer"> </td>
         <td><%= ws.title %></td>
         <td><%= ws.difficulty %></td>
-        <td><%= ws.completed %></td>
+        <td><%= ws.completed ? 'Yes' : 'No' %></td>
         <td><a href="/workoutsessions/<%= ws._id %>" class="btn btn-outline-primary btn-sm">DETAILS</a></td>
       </tr>
    

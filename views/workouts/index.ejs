@@ -3,14 +3,14 @@
 <div class="container">
 <section>
     <h2 class="fs-4 fw-bold text-bg-dark p-2 text-center">Legs and Glute</h2>
-    <table class="table table-striped"  id="legs and glute">
+    <table class="table mb-5 table-striped"  id="legs and glute">
        
         <tbody>
             <% workouts.forEach(function(w) { %>
                 <% if (w.focus === 'Legs and Glute') { %>
                     <tr>
                         <td scope="col" class="text-start"><%= w.title %></td>
-                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">Details</a></td>
+                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">DETAILS</a></td>
                     </tr>
                 <% } %>
             <% }); %>
@@ -27,7 +27,7 @@
                 <% if (w.focus === 'Back and Biceps') { %>
                     <tr>
                         <td scope="col" class="text-start"><%= w.title %></td>
-                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">Details</a></td>
+                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">DETAILS</a></td>
                     </tr>
                 <% } %>
             <% }); %>
@@ -43,7 +43,7 @@
                 <% if (w.focus === 'Shoulder and Triceps') { %>
                     <tr>
                         <td scope="col" class="text-start"><%= w.title %></td>
-                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">Details</a></td>
+                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">DETAILS</a></td>
                     </tr>
                 <% } %>
             <% }); %>
@@ -60,7 +60,7 @@
                 <% if (w.focus === 'Full Body') { %>
                     <tr>
                         <td scope="col" class="text-start"><%= w.title %></td>
-                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">Details</a></td>
+                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">DETAILS</a></td>
                     </tr>
                 <% } %>
             <% }); %>
@@ -78,7 +78,7 @@
                 <% if (w.focus === 'Cardio') { %>
                     <tr>
                         <td scope="col" class="text-start"><%= w.title %></td>
-                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">Details</a></td>
+                        <td scope="col" class="text-end"><a href="/workouts/<%= w._id %>" class="btn btn-outline-primary btn-sm">DETAILS</a></td>
                     </tr>
                 <% } %>
             <% }); %>

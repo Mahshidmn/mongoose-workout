@@ -15,11 +15,19 @@
       <a class="navbar-brand" href="/">Home</a>
       <!-- Login/Logout Link -->
       <% if (user) { %>
-        <a href="/logout" class="navbar-brand">Log out</a>
+        <a href="/logout" class="navbar-brand link-info">Sign Out</a>
       <% } else { %>
-        <a href="/auth/google" class="navbar-brand">Log in</a>
+        <a href="/auth/google" class="navbar-brand link-info">Sign In</a>
       <% } %>
       <!---->
+      
+     <!-- Search bar -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+      <!---->
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,6 +36,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/workouts">All Workouts</a>
           </li>
+
           <% if (user) { %>
             <li class="nav-item">
               <a class="nav-link" href="/workouts/new"> Add New Workout</a>
@@ -51,6 +60,7 @@
               </ul>
             </li>
           <% } %>
+          
         </ul>
       </div>
     </div>

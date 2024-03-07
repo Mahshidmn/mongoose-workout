@@ -1,5 +1,6 @@
 const Activity = require('../models/activity');
 const Workout = require('../models/workout');
+const WorkoutSession = require('../models/workoutsession');
 
 
 async function index(req, res) {
@@ -14,6 +15,31 @@ async function index(req, res) {
     // const ticket = await Ticket.find({flight: flight._id});
     res.render('activities/show', { activity, workouts });
   }
+
+//   async function newActivity(req, res) {
+//     try {
+        
+//         const user = req.user._id;
+//         const userName = req.user.name; 
+//         const userAvatar = req.user.avatar; 
+//         console.log(req.user);
+      
+//         const activity = new Activity({
+//             user: user,
+//             userName: userName,
+//             userAvatar: userAvatar,
+//         });
+
+       
+//         await activity.save();
+//         res.render('activities/new');
+        
+//         } catch (err) {
+//             console.log(err)
+//         }
+//     }
+        
+
 
   function newActivity(req, res) {
     res.render('activities/new');
@@ -30,6 +56,7 @@ async function index(req, res) {
       res.render('activities/new', { errorMsg: err.message });
     }
   }
+
 
   async function addToActivity(req, res) {
     const activity = await Activity.findById(req.params.id);

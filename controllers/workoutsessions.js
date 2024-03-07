@@ -18,7 +18,7 @@ async function show(req, res) {
       model: 'Workout' // Specify the model to use for populating workouts
     }
   });
-    console.log(workoutSession);
+    // console.log(workoutSession);
     // console.log(workoutSession.activities[0].workouts);
 
 
@@ -50,14 +50,14 @@ function newSession(req, res) {
   async function addToWorkoutSession(req, res) {
     const workoutSession = await WorkoutSession.findById(req.params.id);
 
-    req.body.user = req.user._id;
-    req.body.userName = req.user.name;
-    req.body.userAvatar = req.user.avatar;
-    console.log(workoutSession);
+    
+    
+    // console.log(workoutSession);
     
     // The workouts array holds the workout's ObjectId (referencing)
-    workoutSession.activities.push(req.body.activityId);
-    console.log(req.body.activityId);
+
+    // workoutSession.activities.push(req.body.activityId);
+    // console.log(req.body.activityId);
     await workoutSession.save();
     res.redirect(`/workoutsessions/${workoutSession._id}`);
   }
