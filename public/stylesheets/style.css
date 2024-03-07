@@ -19,13 +19,15 @@ a {
   justify-content: space-evenly;
 }
 
-.review-user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.fit-image {
+  max-height: 70vh; 
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
 }
 
-.review-user img {
-  border-radius: 50%;
-  height: 40px;
+
+h2 {
+  margin: 50px;
 }

@@ -24,8 +24,8 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/workouts',
-    failureRedirect: '/workouts'
+    successRedirect: '/',
+    failureRedirect: '/'
   }
 ));
 
@@ -34,7 +34,7 @@ router.get('/logout', function(req, res){
   // logout is a method has been attached by passport to req
   req.logout(function() {
  //change path for your landing page
-    res.redirect('/workouts');
+    res.redirect('/');
   });
 });
 
