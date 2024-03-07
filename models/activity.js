@@ -22,6 +22,15 @@ const activitySchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Workout'
       }],
+    
+    //   user : {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'User',
+    //     required: true 
+    //   },
+    //   userName: String,
+    //   userAvatar: String
+
 }, {
     timestamps: true
 });
