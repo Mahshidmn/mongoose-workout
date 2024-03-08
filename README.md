@@ -18,7 +18,7 @@ link to [Workout Tracker App](https://workout-track-7240a88aec9d.herokuapp.com/)
 
 Workout Tracker combines user-friendly functionality with comprehensive fitness tracking tools to help users of all levels stay on top of their fitness game and achieve their health goals.
 
-## APP Screenshot
+## App Screenshot
 
 ![Workout Tracker App](https://i.imgur.com/KZATqGz.png)
 
