@@ -8,7 +8,7 @@ Beyond mere logging, Workout Tracker is designed to motivate and inform. By visu
 
 link to [Workout Tracker App](https://workout-track-7240a88aec9d.herokuapp.com/)
 
-## Features:
+## Features
 
 **Comprehensive Workout Logging:** Easily enter details of each workout session, including the type of workout, the number of sets, reps, and the weight used for strength training exercises.
 
