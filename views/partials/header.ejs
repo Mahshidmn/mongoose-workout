@@ -12,12 +12,12 @@
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"></nav>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand custom-home-link" href="/">Home</a>
       <!-- Login/Logout Link -->
       <% if (user) { %>
-        <a href="/logout" class="navbar-brand link-info">Sign Out</a>
+        <a href="/logout" class="navbar-brand link-info custom-sign-link">Sign Out</a>
       <% } else { %>
-        <a href="/auth/google" class="navbar-brand link-info">Sign In</a>
+        <a href="/auth/google" class="navbar-brand link-info custom-sign-link">Sign In</a>
       <% } %>
       <!---->
       
@@ -27,6 +27,7 @@
         <button class="btn btn-outline-info" type="submit">Search</button>
       </form>
       <!---->
+  
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,22 +72,4 @@
   
 
   
-    <!-- <a href="/workoutsessions/show">WORKOUT HISTORY</a>     -->
-  
-  <!-- <main> -->
    
-    <!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <a href="/workouts">All Workouts</a>
-        <% if (user) { %>
-           <a href="/workouts/new">+ New Workout</a>
-           
-           <a href="/activities">All Activities</a>
-           <a href="/activities/new">+ New Activity</a>
-           <a href="/workoutsessions">All Workout Sessions</a>
-           <a href="/workoutsessions/new">+ New Workout Session</a>
-           <a href="/logout">Log out</a>
-         <% } else { %>
-           <a href="/auth/google" class="login">Log in</a>
-         <% } %>  
-             
-      </nav> -->

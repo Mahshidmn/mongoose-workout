@@ -70,5 +70,8 @@ h2 {
 #session-completion-button {
   display: flex;
   justify-content: center;
+}
 
+.custom-home-link, .custom-sign-link {
+  font-size: 1rem;
 }

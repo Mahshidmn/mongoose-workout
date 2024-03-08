@@ -8,7 +8,6 @@ async function index(req, res) {
 
   async function show(req, res) {
     const workout = await Workout.findById(req.params.id);
-    // const ticket = await Ticket.find({flight: flight._id});
     res.render('workouts/show', { workout });
   }
 
@@ -22,7 +21,6 @@ function newWorkout(req, res) {
       await Workout.create(req.body);
       res.redirect('/workouts');  
     } catch (err) {
-      // Typically some sort of validation error
       console.log(err);
       res.render('workouts/new', { errorMsg: err.message });
     }

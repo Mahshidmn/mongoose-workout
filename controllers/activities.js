@@ -12,34 +12,8 @@ async function index(req, res) {
     const workouts = await Workout.find({});
     const activity = await Activity.findById(req.params.id).populate('workouts');
     console.log(activity);
-    // const ticket = await Ticket.find({flight: flight._id});
     res.render('activities/show', { activity, workouts });
   }
-
-//   async function newActivity(req, res) {
-//     try {
-        
-//         const user = req.user._id;
-//         const userName = req.user.name; 
-//         const userAvatar = req.user.avatar; 
-//         console.log(req.user);
-      
-//         const activity = new Activity({
-//             user: user,
-//             userName: userName,
-//             userAvatar: userAvatar,
-//         });
-
-       
-//         await activity.save();
-//         res.render('activities/new');
-        
-//         } catch (err) {
-//             console.log(err)
-//         }
-//     }
-        
-
 
   function newActivity(req, res) {
     res.render('activities/new');
