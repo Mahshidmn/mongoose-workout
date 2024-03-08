@@ -23,13 +23,13 @@ const activitySchema = new Schema({
         ref: 'Workout'
       }],
     
-      user : {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
-        required: true 
-      },
-      userName: String,
-      userAvatar: String
+      // user : {
+      //   type: Schema.Types.ObjectId,
+      //   ref: 'User',
+      //   required: true 
+      // },
+      // userName: String,
+      // userAvatar: String
 
 }, {
     timestamps: true

@@ -64,10 +64,23 @@ cd projectname
 
 ## technologies Used
 
+* Node.js
 * Express
 * MongoDB
 * JavaScript
 * CSS
 * HTML
+
+## Next Steps
+
+1. Attach the user info to workout session and show the user Name in the workout session
+
+2. Implement the authorized Delete function
+
+3. Implement search function
+
+4. Work more on css styling
+
+5. Add image to workout details page
 
 
