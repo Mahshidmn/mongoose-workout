@@ -4,8 +4,9 @@ Workout Tracker is a comprehensive, user-friendly application designed to enhanc
 
 With its core functionality focused on meticulously documenting various aspects of workout routines – from the specific exercises performed (workouts) to the volume of work done (sets and reps) – it serves as an indispensable tool for fitness enthusiasts of all levels. Whether you're a beginner aiming to establish consistency or an experienced athlete striving for peak performance, Workout Tracker provides a clear, detailed log of your progress over time.
 
-Beyond mere logging, Workout Tracker is designed to motivate and inform. By visualizing your progress, it helps pinpoint strengths and areas for improvement, enabling you to tailor your training for optimal results. The project stems from a simple philosophy: what gets measured gets improved. Thus, by democratizing access to a powerful tracking tool, Workout Tracker empowers users to take control of their fitness journeys, setting and smashing goals along the way.
+Beyond mere workout logging, Workout Tracker is designed to motivate and inform. By visualizing your progress, it helps pinpoint strengths and areas for improvement, enabling you to tailor your training for optimal results. The project stems from a simple philosophy: what gets measured gets improved. Thus, by democratizing access to a powerful tracking tool, Workout Tracker empowers users to take control of their fitness journeys, setting and smashing goals along the way.
 
+## Heroku Deployment
 link to [Workout Tracker App](https://workout-track-7240a88aec9d.herokuapp.com/)
 
 ## Features
@@ -64,23 +65,23 @@ cd projectname
 
 ## technologies Used
 
+* JavaScript
 * Node.js
 * Express
 * MongoDB
-* JavaScript
 * CSS
 * HTML
 
-## Next Steps
+## Version 1.2 Improvements
 
-1. Attach the user info to workout session and show the user Name in the workout session
+ * Attach the user info including name, photo, workout date, time and suration to workout session summary 
 
-2. Implement the authorized Delete function
+* Implement the authorized Delete function
 
-3. Implement search function
+* Implement search function
 
-4. Work more on css styling
+* Work more on css styling
 
-5. Add image to workout details page
+* Add image to workout details page
 
 
