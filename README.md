@@ -62,7 +62,7 @@ cd projectname
 5. Start the application:
 
       * npm start
-      * Go to link http://localhost:3000/
+      * Running on http://localhost:3000/
 
 ## technologies Used
 
