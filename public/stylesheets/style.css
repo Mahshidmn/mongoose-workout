@@ -24,8 +24,15 @@ a {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  margin-top: -20vmin;
+  margin-top: 10vmin;
 }
+
+.padded-h3 {
+  padding-left: 3rem;   /* More padding on the left */
+  padding-right: 3rem;  /* More padding on the right */
+  padding-bottom: 2rem; /* More padding on the bottom */
+}
+
 
 
 h2 {
