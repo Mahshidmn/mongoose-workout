@@ -21,7 +21,7 @@ Workout Tracker combines user-friendly functionality with comprehensive fitness 
 
 ## App Screenshot
 
-![Workout Tracker App](https://i.imgur.com/KZATqGz.png)
+![Workout Tracker App](https://i.imgur.com/DNxXdqr.png)
 
 
 ## Prerequisites
