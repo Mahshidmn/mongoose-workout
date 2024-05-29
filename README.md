@@ -7,7 +7,7 @@ With its core functionality focused on meticulously documenting various aspects 
 Beyond mere workout logging, Workout Tracker is designed to motivate and inform. By visualizing your progress, it helps pinpoint strengths and areas for improvement, enabling you to tailor your training for optimal results. The project stems from a simple philosophy: what gets measured gets improved. Thus, by democratizing access to a powerful tracking tool, Workout Tracker empowers users to take control of their fitness journeys, setting and smashing goals along the way.
 
 ## Heroku Deployment
-link to [Workout Tracker App](https://workout-track-7240a88aec9d.herokuapp.com/)
+link to [Workout Tracker App](https://workout-track-aea60d7f6624.herokuapp.com/)
 
 ## Features
 
